@@ -33,8 +33,8 @@ def main():
         exit(0)
             
     portlist = [53,143,161,194,69,110,123,139,389,445]
-    for x in range(4, 15):
-        ip = "8.8.8." +str(x)
+    for x in range(1, 100):
+        ip = "62.72.28" +str(x)
         for port in portlist:
             banner = retBanner(ip, port)
             if banner:
